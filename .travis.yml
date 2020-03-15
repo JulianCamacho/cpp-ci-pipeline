@@ -2,8 +2,7 @@ addons:
   sonarcloud:
     organization: "juliancamacho341"
     token:
-      secure: "G10yLEBPzWWUGjGUk00muoa5mLUPmwzqZEbEGU2efdZISxWD+Z8QsPTVhq6GIrmBAMdHJQuVge8zo/t0TxVnDt48ixsWWjq54wQO5Ew9ivOoXLNPfKEd7QHo+Rp/6X1uXntN+c32sBMFGZeWfRC5uvB5aNdiFzxPLKVzjGEXqK1XFDsU2T55dwFj6GJ+U4q6Pdy0BMzZ2JnWYYQ1tFgseU5V8+qDpMIfZt1d7PnNRj6wSeK3Rwwnv3nmd19U3H3FKQiFz9l7HpTEFH6o3tv6ShG3A4dM6RO37DbZjzL+kbufHe0fNTB/cn433wH6JpBZ3fX1BEiJOX6Si0h9Sj8287EV6EwXXFqH0yI7Gb71zfYUOtqoMETu4kr5VnrANyMQF813CALcJzFqhZDNz9cHnKeslNFw5cpcAFojgJ6xVXWvo+RM6pfiEHdbHsHrsxs0FAtsJqlG8BiKT/vCJ4QpWQf1y0X+gllXMh9FjPjcgqDpe2TFlNCcl9Pah8ytndIpQ879bAH0fbjhWZekbAbb9qs+nF9Syfox2KIn01gfarPyiwot4XgQd1cHM/7E90VBVKRWhxXaaCcnLwG45gUCWYZlCyxE22cXIzPYmZ/RGvFwx/TKdf0N/r6z45GTppqs13BGemq5p2a3vBg5UG66Y6ifNEq7eyMiEO+p/BNrwiY="
-
+      secure: $Analyze "cpp-continuos-integration" 4
 language: cpp
 compiler:
   - gcc
