@@ -2,10 +2,24 @@ language: cpp
 compiler:
   - gcc
 
+addons:
+  sonarcloud:
+    organization: "juliancamacho341"
+    token: ${SONAR_TOKEN}
+
 script:
-  - cmake .
-  - make
-  - ./cpp_ci_pipeline
+  - mkdir build
+  - cd build
+  - cmake ..
+  - cd ..
+  # Wraps the compilation with the Build Wrapper to generate configuration (used
+  # later by the SonarScanner) into the "bw-output" folder
+  - build-wrapper-linux-x86-64 --out-dir bw-output cmake --build build/
+  # And finally run the SonarCloud analysis - read the "sonar-project.properties"
+  # file to see the specific configuration
+  - sonar-scanner
 
-
+cache:
+  directories:
+    - '$HOME/.sonar/cache'
 
