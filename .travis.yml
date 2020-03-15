@@ -14,6 +14,11 @@ script:
   - make
   - ./cpp_ci_pipeline
   - cd ..
+  - rm -Rf build
+  - mkdir build
+  - cd build
+  - cmake ..
+  - cd ..
   # Wraps the compilation with the Build Wrapper to generate configuration (used
   # later by the SonarScanner) into the "bw-output" folder
   - build-wrapper-linux-x86-64 --out-dir bw-output cmake --build build/
