@@ -20,7 +20,7 @@ TEST_F(ClassDeclaration, restarTest){
     ASSERT_EQ(obj.restar(3,5), -2);
 }
 TEST_F(ClassDeclaration, multiplicarTest){
-    ASSERT_EQ(obj.multiplicar(3,7), 21);
+    ASSERT_EQ(obj.multiplicar(3,8), 24);
 }
 TEST_F(ClassDeclaration, dividirTest){
     ASSERT_EQ(obj.dividir(15,5), 3);
